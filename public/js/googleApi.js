@@ -8,6 +8,7 @@ function initGoogleAPI() {
 	let pressure = document.getElementById('pressure');
 	let temperature = document.getElementById('temperature');
 	let inputAutocomplete = new google.maps.places.SearchBox(document.getElementById('place'));
+	const body = document.getElementsByTagName('body')[0];
 	
 	function searchPlace(event) {
 		let city = inputAutocomplete.getPlaces()[0];
@@ -16,6 +17,12 @@ function initGoogleAPI() {
 		let key = 'b6da4219d66ba326d6f8850b2359daa9';
 		let darkSkyCall = `https://api.darksky.net/forecast/${key}/${latitude},${longitude}?lang=es`;
 		let proxy = 'https://cors-anywhere.herokuapp.com/';
+		
+		const photoRequest = new XMLHttpRequest();
+		photoRequest.open('GET', 'https://api.flickr.com/flickr.photos.search');
+		
+		body.classList.remove('background-body');
+		body.style.backgroundImage = 'url(assets/img/path.jpg)';
 		
 		$.ajax({
 			url: proxy + darkSkyCall,
