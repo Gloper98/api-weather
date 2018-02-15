@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	text-align: center;
+}
+.inline-block {
+	display: inline-block;
+}
+.mrgtop-05 {
+	margin-top: 5em; 
+}
+.mrgtop-03 {
+	margin-top: 3em;
+}
+.fa-sun {
+	font-size: 70px;
+}
+.content {
+	margin: 1em;
+}
