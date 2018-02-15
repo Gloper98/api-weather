@@ -20,6 +20,8 @@ function initGoogleAPI() {
 		$.ajax({
 			url: proxy + darkSkyCall,
 			success: function(data) {
+				console.log(data);
+				localStorage.setItem('currentPlace', JSON.stringify(data));
 				currentCity.innerText = inputContent.value;
 				wind.innerText = data.currently.windSpeed;
 				temperature.innerText = data.currently.temperature;
