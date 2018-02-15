@@ -1,26 +1,31 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.h-100vh {
+  height: 100vh;
 }
-body {
-	text-align: center;
-	background-image: url('../assets/img/sky.jpg');
-	background-position: center;
-	background-size:cover;
+
+.bg-fondo {
+  background-image: url('../assets/images/fondo.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.inline-block {
-	display: inline-block;
+
+.all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.mrgtop-05 {
-	margin-top: 5em; 
+
+
+.opacity {
+  background: rgba(000, 000, 000, .5);
 }
-.mrgtop-03 {
-	margin-top: 3em;
+
+/* Colors */
+
+.red {
+  background-color: rgb(218, 49, 49);
 }
-.fa-sun {
-	font-size: 70px;
-}
-.content {
-	margin: 1em;
+
+.white-text {
+  color: white !important;
 }
